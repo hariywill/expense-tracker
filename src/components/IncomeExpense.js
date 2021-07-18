@@ -1,20 +1,20 @@
-import React from 'react';
-import { useGlobalContext } from '../context/context';
+import React, { useContext } from 'react';
+import { AppContext } from '../context/context';
 
 export const IncomeExpense = () => {
-    const { transaction } = useGlobalContext()
+    const { transactions } = useContext(AppContext)
     //use transaction to hold income and expense data
-    //transaction has all the transaction, including income and expemse
+    //transaction has all the transaction, including income and expense
     //const income = 
     //const expense = 
     return (
-        <div>
-            <div className="income-expense">
-                <h4>income</h4>
-                <p className='money add'>where income shows</p>
+        <div className="in-ex-container">
+            <div>
+                <h4>Income</h4>
+                <p className='money plus'>where income shows</p>
             </div>
             <div>
-                <h4>expense</h4>
+                <h4>Expense</h4>
                 <p className='money minus'>where expense shows</p>
             </div>
         </div>

@@ -1,5 +1,11 @@
+import React from 'react'
+
 export const Transaction = () => {
     return (
-        <h1>transactions</h1>
+        <li className="minus">
+            Cash 
+            <span>$0.00</span>
+            <button className="delete-btn">x</button>
+        </li>
     )
 }

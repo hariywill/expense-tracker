@@ -2,7 +2,7 @@ import React, { useContext, useReducer } from 'react'
 import { reducer } from './reducer';
 
 const initialState = {
-    transactions: []
+    transactions: [] //An [] of {}s
 }
 
 const AppContext = React.createContext(initialState)
@@ -36,8 +36,5 @@ const AppProvider = ({ children }) => {
         )
 }
 
-export const useGlobalContext = () => {
-    return useContext()
-}
 
 export { AppContext, AppProvider }
